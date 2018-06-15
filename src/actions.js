@@ -1,12 +1,12 @@
 import { 
-    CHANGE_SEARCH_FIELD,
+    CHANGE_SEARCHFIELD,
     REQUEST_ROBOTS_PENDING,
     REQUEST_ROBOTS_SUCCESS,
     REQUEST_ROBOTS_FAILED
  } from './constants.js'
 
 export const setSearchField = (text) => ({
-    type: 'CHANGE_SEARCH_FIELD',
+    type: 'CHANGE_SEARCHFIELD',
     payload: text
 })
 

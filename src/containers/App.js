@@ -12,14 +12,13 @@ const mapStateToProps = state => {
         searchField: state.searchRobots.searchField,
         robots: state.requestRobots.robots,
         isPending: state.requestRobots.isPending,
-        error: state.requestRobots.error
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
         onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
-        onRequestRobots: () => requestRobots(dispatch)
+        onRequestRobots: () => dispatch(requestRobots())
     }
 }
 
